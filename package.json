@@ -1,6 +1,6 @@
 {
   "name": "react-app",
-  "homepage": "https://isurunuwanthilaka.github.io/react-app",
+  "homepage": "https://isurunuwanthilaka.github.io/my-life-stats",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-     "@babel/helper-define-map": "^7.16.7",
+    "@babel/helper-define-map": "^7.16.7",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
