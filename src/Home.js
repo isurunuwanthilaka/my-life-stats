@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
 function Home() {
+  const y = 60 * 60 * 24 * 365;
   const [time, setTime] = useState(parseInt(Date.now() / 1000));
 
   const bornS = parseInt(Date.parse("1995-02-19 17:21") / 1000);
@@ -23,19 +24,30 @@ function Home() {
     <>
       <Row>
         <Col>I have lived</Col>
-        <Col>{time - bornS}</Col>
+        <Col>
+          {`${((time - bornS) / y).toFixed(2)} yrs (${time - bornS} seconds)`}
+        </Col>
       </Row>
       <Row>
         <Col>Expected to live</Col>
-        <Col>{deathS - time}</Col>
+        <Col>{`${((deathS - time) / y).toFixed(2)} yrs (${
+          deathS - time
+        } seconds)`}</Col>
       </Row>
       <Row>
         <Col>Being vegetarian</Col>
-        <Col>{time - vegS}</Col>
+        <Col>
+          {`${((time - vegS) / y).toFixed(2)} yrs (${time - vegS} seconds)`}
+        </Col>
       </Row>
       <Row>
         <Col>Avg Coding</Col>
-        <Col>{parseInt(((time - codingS) * 8) / 24)}</Col>
+        <Col>
+          {}
+          {`${(parseInt(time - codingS) / y).toFixed(2)} yrs (${parseInt(
+            time - codingS
+          )} seconds)`}
+        </Col>
       </Row>
     </>
   );
