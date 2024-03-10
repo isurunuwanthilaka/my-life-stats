@@ -44,7 +44,7 @@ function Home() {
           </Col>
         </Row>
         <Row>
-          <Col>Spent on Coding 👨‍💻 for money 💵</Col>
+          <Col>Spent on professional coding 👨‍💻 </Col>
           <Col>
             {}
             {`${(parseInt(time - codingS) / y).toFixed(2)} yrs (${parseInt(
